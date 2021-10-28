@@ -74,8 +74,8 @@ def draw(filename,degree):
     plt.savefig(gr_path)
     plt.close()
 
-
-    img2 = interp.rotate(input=img, angle=degree, axes=(0,1),reshape = False)
+    ################
+    img2 = img
     ##сохраняем новое изображение
     img2 = Image.fromarray((img2 * 255).astype(np.uint8))
     new_path = "./static/new.png"
