@@ -75,7 +75,7 @@ def draw(filename,degree):
     plt.close()
 
     ################
-    img2 = Image.open(filename)
+    img2 = img
     ##сохраняем новое изображение
     img2 = Image.fromarray((img2 * 255).astype(np.uint8))
     new_path = "./static/new.png"
