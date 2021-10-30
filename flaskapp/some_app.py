@@ -86,7 +86,7 @@ def draw(filename,degree):
     k=dlina
     for j in range(dlina,height+dlina,dlina*2):
       for i in range (dlina*2,width+dlina,dlina*2):
-        img2[j:j+dlina,k:i]=[0,0,0]
+        img2[j:j+dlina,k:i]=[255/255,0,0]
         k=k+dlina*2
       k=dlina
     img2 = Image.fromarray((img2 * 255).astype(np.uint8))
